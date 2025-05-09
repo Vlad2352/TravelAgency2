@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Туристическое агентство</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<!-- Ваш CSS (если есть) -->
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-spa me-2"></i>TravelAgency
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Переключить навигацию">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">О нас</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Страны</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="queen_russia.html">Россия</a></li>
+            <li><a class="dropdown-item" href="egypt.html">Египет</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">Отзывы</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <button class="btn btn-light me-2">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+          Вход
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5 bg-light text-center" id="about">
+  <div class="container">
+    <h1 class="mb-4">Добро пожаловать в TravelAgency</h1>
+    <p class="lead mb-4">Лучшие туры и путешествия по всему миру. Выбирайте свое направление!</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="queen_russia.html" class="btn btn-primary btn-lg">
+        <i class="fas fa-flag"></i> Россия
+      </a>
+      <a href="egypt.html" class="btn btn-primary btn-lg">
+        <i class="fas fa-pyramid"></i> Египет
+      </a>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Видео-блок -->
+<<section class="hero-video mb-5">
+  <div class="container d-flex flex-column align-items-center">
+    <h2 class="mb-4 text-center">Как мы проводим туры</h2>
+    <div class="ratio ratio-16x9" style="max-width: 800px; width: 100%;">
+      <iframe src="https://www.youtube.com/embed/MhnlNow6FlQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- Товары без карусели -->
+<section class="container mb-5">
+  
+    <h2 class="text-center mb-4">Хиты продаж</h2>
+    
+    <div class="d-flex overflow-auto">
+      <!-- Первый товар -->
+      <div class="card product-card me-3" style="min-width: 300px;">
+        <img src="img/пирамиды.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Египетские пирамиды</h5>
+          <p class="card-text">
+            <span class="badge bg-success mb-2">Хит продаж</span><br>
+            Египетские пирамиды — одни из древнейших и самых известных архитектурных сооружений мира. Эти монументальные гробницы фараонов служили их вечным домом и символизировали власть и божественность правителей древнего Египта.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="h5 text-success">9 500 P</span>
+            <button class="btn btn-sm btn-outline-success">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Второй товар -->
+      <div class="card product-card me-3" style="min-width: 300px;">
+        <img src="img/красная площадь.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Красная площадь</h5>
+          <p class="card-text">
+            <span class="badge bg-danger mb-2">Акция</span><br>
+            Красная площадь — одна из главных исторических и культурных достопримечательностей Москвы. Это центр города, окружённый Кремлём, ГУМом и Собором Василия Блаженного, и символ России с богатой историей и архитектурным великолепием.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="h5 text-success">3 500 P</span>
+            <button class="btn btn-sm btn-outline-success">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Третий товар -->
+      <div class="card product-card" style="min-width: 300px;">
+        <img src="img/Волгодонск.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Волгодонск</h5>
+          <p class="card-text">
+            <span class="badge bg-warning mb-2">Новинка</span><br>
+            Волгодонск — город (с 1956 года) в Ростовской области России. Образует одноимённый городской округ. Этимология. Образован в 1950 году как посёлок Волгодонск из посёлков строителей и эксплуатационников Волго-Донского судоходного канала.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="h5 text-success">1 575 P</span>
+            <button class="btn btn-sm btn-outline-success">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Галерея -->
+<div class="container mb-5">
+    
+    <h2 class="text-center mb-4">Наши туры</h2>
+    
+    <div class="row g-3">
+      
+      <div class="col-md-4 col-6">
+        
+        <img src="img/i.jpg" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/i.jpg">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="img/o.jpg" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/o.jpg">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="img/p.jpg" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/P.jpg">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Форма обратной связи -->
+<section class="container mb-5">
+
+    <h2 class="text-center mb-4">Остались вопросы?</h2>
+  
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+  
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Ваше имя</label>
+            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+          </div>
+  
+          <div class="mb-3">
+            <label for="email" class="form-label">Ваш email</label>
+            <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Ваш телефон</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Введите ваш телефон">
+          </div>
+  
+          <div class="mb-3">
+            <label for="message" class="form-label">Сообщение</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+          </div>
+  
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="agreement">
+            <label class="form-check-label" for="agreement">Согласен с условиями обработки персональных данных</label>
+          </div>
+  
+          <button type="submit" class="btn btn-success">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Секция отзывов -->
+<section class="container mb-5" id="reviews">
+  
+    <h2 class="text-center mb-4">Что говорят о наших Турах</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Вячеслав</h5>
+            <div class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">
+              Попробовал Тур по Египетским пирамидам, и что могу сказать... Невероятно!
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Второй отзыв (аналогично первому) -->
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Марк</h5>
+            <div class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="card-text">
+              Брал Тур по Красной площади, все доскально обьяснили, понял даже мой 3-х летний сын!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал сайта -->
+<footer class="bg-dark text-white py-4">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Контакты</h5>
+                <p><i class="fas fa-map-marker-alt me-2"></i>Волгодонск, пр. Курчатова 18 </p>
+                <p><i class="fas fa-phone me-2"></i>+7 (800) 535-35-35</p>
+
+            </div>
+            <div class="col-md-4">->
+                <h5>Соцсети</h5>
+                <div class="social-links">
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-vk fa-2x"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-telegram fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email для рассылки">
+                    <button class="btn btn-success" type="button">Подписаться</button>
+                </div>
+                <small class="text-muted">Подпишитесь на новости и акции</small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Модальное окно для входа -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Вход</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" placeholder="Введите ваш email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Введите ваш пароль">
+                    </div>
+                    <button type="submit" class="btn btn-success">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Скрипты Bootstrap и ваш скрипт -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const galleryModal = document.getElementById('galleryModal')
+    galleryModal.addEventListener('show.bs.modal', event => { 
+        const img = event.relatedTarget 
+        const imgSrc = img.getAttribute('data-bs-img') 
+        const modalImage = galleryModal.querySelector('#modalImage') // 
+        modalImage.src = imgSrc 
+    })
+</script>
+</body>
+</html>
